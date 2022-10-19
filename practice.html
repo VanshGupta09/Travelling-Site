@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            overflow: hidden;
+            display: inline-block;
+            position: relative;
+        }
+
+        img {
+            z-index: 1;
+        }
+
+        .img:hover img {    
+            transform: scale(1.3);
+            transition: .5s;
+        }
+
+        .data {
+            position: absolute;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <img src="/traveller/img/destination-1.jpg" alt="destination_1">
+        <div class="data">
+            <h5>dummy heading</h5>
+            <p>dummy paragraph</p>
+        </div>
+    </div>
+</body>
+
+</html>
